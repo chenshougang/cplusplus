@@ -83,7 +83,9 @@ int main()
     csg_circle.print_shape();
     csg_circle.print_circle();
 
-    std::cout << __has_cpp_attribute(__fallthrough) << std::endl;
+    // std::cout << __has_cpp_attribute(__fallthrough) << std::endl;
+
+    std::cout << std::endl;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
