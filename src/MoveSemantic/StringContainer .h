@@ -30,7 +30,7 @@ public:
         other.data_ = nullptr;
     }
 
-
+    // 赋值构造函数
     StringContainer& operator=(const StringContainer& other)
     {
         std::cout << "Assignment operator called\n";
@@ -46,7 +46,7 @@ public:
         return *this; // 返回当前对象的引用，以支持连续赋值
     }
  
-
+    // 拷贝构造函数
     StringContainer(const StringContainer& other)
     {
         std::cout << "copy constructor called\n";
@@ -63,11 +63,14 @@ public:
         delete[] data_;
     }
 
+    // 打印地址
     void print_address()
     {
         std::cout << "data_ address = " << static_cast<const void*>(data_) << std::endl;
     }
 
+
+    // 打印信息
     void print_message()
     {
         std::cout << "data_ = " << data_ << std::endl;
